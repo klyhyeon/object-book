@@ -1,8 +1,8 @@
 package org.example.ch01
 
 class Bag(
-    private var amount: Long,
     private var invitation: Invitation?,
+    private var amount: Long,
 ) {
 
     private var ticket: Ticket? = null
@@ -10,8 +10,8 @@ class Bag(
     constructor(
         amount: Long,
     ) : this(
-        amount = amount,
         invitation = null,
+        amount = amount,
     ) {
         this.amount = amount
     }
